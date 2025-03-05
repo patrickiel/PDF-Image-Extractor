@@ -1,6 +1,6 @@
 # PDF Image Extractor
 
-A Python tool to extract images from PDF files with intelligent filtering and organization.
+A Python tool to extract images from PDF files.
 
 ## Features
 
