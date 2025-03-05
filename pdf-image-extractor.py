@@ -83,7 +83,8 @@ def extract_images_from_pdf(pdf_path, output_dir, min_size=100):
 def main():
     # Set up command line arguments
     parser = argparse.ArgumentParser(description='Extract images from all PDFs in a directory')
-    parser.add_argument('input_dir', help='Directory containing PDF files')
+    parser.add_argument('input_dir', nargs='?', help='Directory containing PDF files (default: ./pdfs)', 
+                      default='./pdfs')
     parser.add_argument('--output_dir', help='Directory to save extracted images (default: ./extracted_images)', 
                       default='./extracted_images')
     parser.add_argument('--min_size', type=int, help='Minimum pixel dimension for images (default: 100)', 

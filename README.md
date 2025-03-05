@@ -37,28 +37,34 @@ A Python tool to extract images from PDF files with intelligent filtering and or
 1. Place your PDF files in the `pdfs` directory
 2. Run the script:
    ```bash
-   python pdf-image-extractor.py pdfs
+   python pdf-image-extractor.py
    ```
 3. Extracted images will be saved in the `extracted_images` directory
 
 ### Advanced Options
 
 ```bash
-python pdf-image-extractor.py INPUT_DIR [--output_dir OUTPUT_DIR] [--min_size MIN_SIZE]
+python pdf-image-extractor.py [INPUT_DIR] [--output_dir OUTPUT_DIR] [--min_size MIN_SIZE]
 ```
 
 #### Arguments:
-- `INPUT_DIR`: Directory containing PDF files (required)
+- `INPUT_DIR`: Directory containing PDF files (optional, default: ./pdfs)
 - `--output_dir`: Directory to save extracted images (default: ./extracted_images)
 - `--min_size`: Minimum pixel dimension for images (default: 100)
 
 #### Examples:
 ```bash
-# Extract images with custom minimum size
-python pdf-image-extractor.py pdfs --min_size 200
+# Use default pdfs directory
+python pdf-image-extractor.py
 
-# Specify custom output directory
-python pdf-image-extractor.py pdfs --output_dir my_images
+# Specify custom input directory
+python pdf-image-extractor.py my_pdfs
+
+# Extract images with custom minimum size
+python pdf-image-extractor.py --min_size 200
+
+# Specify custom input and output directories
+python pdf-image-extractor.py my_pdfs --output_dir my_images
 ```
 
 ## Directory Structure
