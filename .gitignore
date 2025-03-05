@@ -1,0 +1,35 @@
+# Python virtual environment
+.venv/
+venv/
+ENV/
+
+# Python bytecode
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Distribution / packaging
+dist/
+build/
+*.egg-info/
+
+# IDE settings
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Project specific
+extracted_images/
+pdfs/*.pdf
+
+# Logs
+*.log
+
+# Local development settings
+.env
+.env.local
+
+# System files
+.DS_Store
+Thumbs.db 
